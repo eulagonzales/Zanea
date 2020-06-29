@@ -1,0 +1,118 @@
+$primary: #004069;
+$yellow: #f56400;
+$light: #ffffff;
+$theme-colors: ("primary": $primary,
+);
+$font-family-base: "Sorts Mill Goudy",
+serif;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@media only screen and (max-width: 768px) {
+    .order {
+        display: flex;
+    }
+
+    .order-one {
+        order: 1;
+    }
+
+    .order-two {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 582px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .shopping {
+        font-size: 0.8rem;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    color: $primary;
+}
+
+.nav-item {
+    font-family: "Oswald", sans-serif;
+}
+
+.fa-bars {
+    color: $primary;
+}
+
+p,
+h6 {
+    font-family: Karla, sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: "Sorts Mill Goudy", sans-serif;
+}
+
+.first-slider {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent),
+        url(images/kal-visuals-1YET7ksfk9c-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.second-slider {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+        url(images/andrew-neel-7crB2ccrmPo-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.third-slider {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent),
+        url(images/top-view-of-a-child-s-feet-with-cute-socks-between-a-man-3394192.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption {
+    top: 60%;
+    transform: translateY(-60%);
+}
+
+.testimonial-img {
+    width: 100%;
+    height: 100vh;
+    background: url(images/testimonial-imgtom-sodoge.jpg) no-repeat center;
+    background-size: cover;
+}
